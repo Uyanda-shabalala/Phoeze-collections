@@ -10,7 +10,6 @@ body {
   background-color: #fff;
   color: #333;
 }
-
 /* NAVBAR */
 .navbar {
   display: flex;
@@ -96,10 +95,9 @@ body {
 }
 
 /* About us */
-
 .about {
   padding: 4rem 3rem;
-  margin: top 5em bottom 5em;
+  margin: 5em 0;
 }
 
 /* SERVICE GALLERY */
@@ -115,6 +113,10 @@ body {
   gap: 2rem;
 }
 
+.service-item {
+  text-align: center;
+}
+
 .service-gallery img {
   width: 200px;
   height: 200px;
@@ -128,10 +130,10 @@ body {
 }
 
 /*Catalog*/
-
-.catalog {
+.Catalog {
+  display: flex;
   padding: 3rem;
-  margin: top 5em bottom 5em;
+  margin: 5em 0;
   background-color: #ddd;
 }
 .catalog-text {
@@ -144,50 +146,134 @@ body {
   gap: 2rem;
 }
 
-.catalog img{
-    width: 200px;
+.catalog-item {
+  width: max-content;
+  text-align: center;
+}
+
+.catalog img {
+  width: 200px;
   height: 200px;
   object-fit: cover;
   border-radius: 10px;
 }
+.catalog-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  gap: 2px;
+}
+
+.cta-btn:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  border-color: #f8f8f8;
+  border-width: 2px;
+}
 
 /*Bookings*/
-
 .Bookings {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: top 5em bottom 5em;
+  margin: 5em 0;
+  flex-direction: column;
+  padding: 0 1rem;
 }
 
-.Bookings input {
-  margin: top 1px;
+.Bookings-text {
+  max-width: 500px;
+  width: 100%;
+}
+
+.Bookings input,
+.Bookings select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.Bookings label {
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.Bookings input[type="submit"] {
+  background-color: #1e1e2f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+}
+
+/*Feedback section*/
+
+.feedback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5em 0;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+.feedback-Stars {
+  margin: 0.5em 0.5em;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+  max-width: max-content;
+  max-height: fit-content;
+  resize: none;
+}
+
+.feedback-form button {
+  background-color: #c49b7e;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
 }
 
 /*Footer*/
 footer {
   background-color: #1e1e2f;
+  padding: 1rem 0;
+  margin-top: 3rem;
 }
 
 .footer-text {
   color: #fff;
   display: flex;
   justify-content: center;
-  
-
+  padding: 0.5rem;
 }
 
-.footer-icons{
-    color: #f9f9f9;
-    display: flex;
-    flex-direction:row ;
-    justify-content: center
-    ;
-    align-items: center;
-    gap: 5px;
+.footer-icons {
+  color: #f9f9f9;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
 }
+
 /*Responsive Design*/
-
 @media (max-width: 1024px) {
   .hero {
     flex-direction: column;
@@ -225,6 +311,10 @@ footer {
     width: 150px;
     height: 150px;
   }
+
+  .catalog-items {
+    justify-content: center;
+  }
 }
 
 /* Mobile screens */
@@ -257,5 +347,10 @@ footer {
 
   .service-text li h2 {
     font-size: 1.2rem;
+  }
+
+  .catalog-items {
+    flex-direction: column;
+    align-items: center;
   }
 }
