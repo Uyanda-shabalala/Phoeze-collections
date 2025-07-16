@@ -36,8 +36,7 @@ The current version is a static website, but future iterations will include **Re
 |-----------|--------|
 | **HTML5** | Page structure and content |
 | **CSS3**  | Styling and layout |
-| **JavaScript (Planned)** | Interactivity and dynamic UI |
-| **React (Planned)** | Component-based architecture for Catalog, Bookings, and Cart |
+| **React**  | Component-based architecture for Catalog, Bookings|
 | **Node.js + Express (Planned)** | Backend API for bookings and product data |
 
 
